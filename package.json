@@ -1,0 +1,6 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "python3 -m gradio.cli.commands.reload part1.py"
+  }
+}

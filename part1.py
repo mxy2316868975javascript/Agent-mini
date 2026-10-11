@@ -29,6 +29,7 @@ demo = gr.Interface(
     fn=image_to_sketch,
     inputs=[gr.Image(label="上传图片",type="pil")],
     outputs=[gr.Image(label="铅笔画")],
+    api_name=False,
     title="图像转铅笔画",
     description="将上传的图片转为铅笔画。"
 )
@@ -47,4 +48,4 @@ demo = gr.Interface(
 # )
 
 # 启动应用
-demo.launch()
+demo.launch(server_port=7860, show_api=False)
